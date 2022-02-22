@@ -2,11 +2,27 @@
   friendly_name: Outside Temperature and Humidity Sensor
 '0x00124b0024c04059':
   friendly_name: Hall Radiator
+  homeassistant:
+    switch:
+      payload_on: 'OFF'
+      payload_off: 'ON'
 '0x00124b0024c0e7bc':
   friendly_name: Living Room Radiator
+  homeassistant:
+    switch:
+      payload_on: 'OFF'
+      payload_off: 'ON'
 '0x00124b0024c15443':
   friendly_name: Bedroom Radiator
+  homeassistant:
+    switch:
+      payload_on: 'OFF'
+      payload_off: 'ON'
 '0x00124b0024bfef02':
   friendly_name: Bathroom Radiator
+  homeassistant:
+    switch:
+      payload_on: 'OFF'
+      payload_off: 'ON'
 '0x54ef4410002c846b':
   friendly_name: Desktop Smart Plug
