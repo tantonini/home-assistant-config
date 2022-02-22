@@ -5,6 +5,7 @@
 !*.yaml
 !.gitignore
 !*.md
+!zigbee2mqtt
 
 # Ignore folders.
 .storage
@@ -15,3 +16,6 @@
 ip_bans.yaml
 secrets.yaml
 known_devices.yaml
+
+# Ignore specific files
+zigbee2mqtt/configuration.yaml
