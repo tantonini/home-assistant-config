@@ -1,1 +1,5 @@
-{}
+'1':
+  friendly_name: Living Room Radiators
+  devices:
+    - 0x00124b0024c0e7bc/1
+    - 0x00124b0024c04059/1
