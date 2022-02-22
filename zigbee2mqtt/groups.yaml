@@ -3,3 +3,8 @@
   devices:
     - 0x00124b0024c0e7bc/1
     - 0x00124b0024c04059/1
+  homeassistant:
+    switch:
+      payload_on: 'OFF'
+      payload_off: 'ON'
+
