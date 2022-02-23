@@ -7,6 +7,7 @@ tts:
   - platform: google_translate
 
 automation: !include automations.yaml
+climate: !include climates.yaml
 scene: !include scenes.yaml
 script: !include scripts.yaml
 
