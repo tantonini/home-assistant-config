@@ -26,3 +26,7 @@
       payload_off: 'ON'
 '0x54ef4410002c846b':
   friendly_name: Desktop Smart Plug
+'0x04cf8cdf3c7c00bb':
+  friendly_name: Living Room Remote Switch
+'0x04cf8cdf3c7c9a71':
+  friendly_name: Bedroom Remote Switch
