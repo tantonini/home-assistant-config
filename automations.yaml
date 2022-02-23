@@ -221,3 +221,121 @@
     target:
       area_id: bathroom
   mode: single
+- id: '1645610474319'
+  alias: Living Room Temperature - Set morning temperature during week
+  description: ''
+  trigger:
+  - platform: time
+    at: 05:45:00
+  - platform: homeassistant
+    event: start
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    after: 05:45:00
+    before: 07:15:00
+  action:
+  - service: climate.set_temperature
+    data:
+      temperature: 19
+    target:
+      area_id: living_room
+  - service: climate.turn_on
+    data: {}
+    target:
+      area_id: living_room
+  mode: single
+- id: '1645610575305'
+  alias: Living Room Temperature - Set day temperature during week
+  description: ''
+  trigger:
+  - platform: time
+    at: 07:15:00
+  - platform: homeassistant
+    event: start
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    after: 07:15:00
+    before: '17:15:00'
+  action:
+  - service: climate.set_temperature
+    data:
+      temperature: 16
+    target:
+      area_id: living_room
+  - service: climate.turn_on
+    data: {}
+    target:
+      area_id: living_room
+  mode: single
+- id: '1645610717729'
+  alias: Living Room Temperature - Set night temperature
+  description: ''
+  trigger:
+  - platform: time
+    at: '23:00:00'
+  - platform: homeassistant
+    event: start
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    after: '23:00:00'
+    before: 05:44:00
+  action:
+  - service: climate.set_temperature
+    data:
+      temperature: 16
+    target:
+      area_id: living_room
+  - service: climate.turn_on
+    data: {}
+    target:
+      area_id: living_room
+  mode: single
+- id: '1645610794300'
+  alias: Living Room Temperature - Set evening temperature during week
+  description: ''
+  trigger:
+  - platform: time
+    at: '22:00:00'
+  - platform: homeassistant
+    event: start
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    after: '17:00:00'
+    before: '22:00:00'
+  action:
+  - service: climate.set_temperature
+    data:
+      temperature: 19
+    target:
+      area_id: living_room
+  - service: climate.turn_on
+    data: {}
+    target:
+      area_id: living_room
+  mode: single
