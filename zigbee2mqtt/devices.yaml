@@ -1,13 +1,13 @@
 '0x00124b0024fc2c1c':
   friendly_name: Outside Temperature and Humidity Sensor
 '0x00124b0024c04059':
-  friendly_name: Hall Radiator
+  friendly_name: Living Room Hall Radiator
   homeassistant:
     switch:
       payload_on: 'OFF'
       payload_off: 'ON'
 '0x00124b0024c0e7bc':
-  friendly_name: Living Room Radiator
+  friendly_name: Living Room Main Radiator
   homeassistant:
     switch:
       payload_on: 'OFF'
