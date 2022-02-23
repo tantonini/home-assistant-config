@@ -339,3 +339,69 @@
     target:
       area_id: living_room
   mode: single
+- id: '1645621821215'
+  alias: Bedroom Remote Switch - Left button 1 push
+  description: Set bedroom temperature to 16°
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 8e0f004373f1386ff3a511db57bfaeb3
+    type: action
+    subtype: button_1_single
+    discovery_id: 0x04cf8cdf3c7c9a71 action_button_1_single
+  condition: []
+  action:
+  - service: climate.set_temperature
+    data:
+      temperature: 16
+    target:
+      area_id: bedroom
+  - service: climate.turn_on
+    data: {}
+    target:
+      area_id: bedroom
+  mode: single
+- id: '1645622200651'
+  alias: Bedroom Remote Switch - Right button 1 push
+  description: Set bedroom temperature to 19°
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 8e0f004373f1386ff3a511db57bfaeb3
+    type: action
+    subtype: button_2_single
+    discovery_id: 0x04cf8cdf3c7c9a71 action_button_2_single
+  condition: []
+  action:
+  - service: climate.set_temperature
+    data:
+      temperature: 19
+    target:
+      area_id: bedroom
+  - service: climate.turn_on
+    data: {}
+    target:
+      area_id: bedroom
+  mode: single
+- id: '1645629367875'
+  alias: Bedroom Remote Switch - Right button 2 pushes
+  description: Set bedroom temperature to 20°
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 8e0f004373f1386ff3a511db57bfaeb3
+    type: action
+    subtype: button_2_double
+    discovery_id: 0x04cf8cdf3c7c9a71 action_button_2_double
+  condition: []
+  action:
+  - service: climate.set_temperature
+    data:
+      temperature: 20
+    target:
+      area_id: bedroom
+  - service: climate.turn_on
+    data: {}
+    target:
+      area_id: bedroom
+  mode: single
