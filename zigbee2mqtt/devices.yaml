@@ -1,5 +1,7 @@
 '0x00124b0024fc2c1c':
   friendly_name: Outside Temperature and Humidity Sensor
+  humidity_precision: 0
+  temperature_precision: 1
 '0x00124b0024c04059':
   friendly_name: Living Room Hall Radiator
   homeassistant:
