@@ -1,1 +1,38 @@
-[]
+- platform: generic_thermostat
+  name: Living Room Thermostat
+  unique_id: living_room_thermostat
+  heater: switch.living_room_radiators
+  target_sensor: sensor.living_room_temperature
+  min_temp: 15
+  max_temp: 25
+  ac_mode: false
+  cold_tolerance: 0
+  hot_tolerance: 0.5
+  away_temp: 15
+  precision: 0.1
+
+- platform: generic_thermostat
+  name: Bedroom Thermostat
+  unique_id: bedroom_thermostat
+  heater: switch.bedroom_radiator
+  target_sensor: sensor.bedroom_temperature
+  min_temp: 15
+  max_temp: 25
+  ac_mode: false
+  cold_tolerance: 0
+  hot_tolerance: 0.5
+  away_temp: 15
+  precision: 0.1
+
+- platform: generic_thermostat
+  name: Bathroom Thermostat
+  unique_id: bathroom_thermostat
+  heater: switch.bathroom_radiator
+  target_sensor: sensor.bathroom_temperature
+  min_temp: 15
+  max_temp: 25
+  ac_mode: false
+  cold_tolerance: 0
+  hot_tolerance: 0.5
+  away_temp: 15
+  precision: 0.1
