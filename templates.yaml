@@ -1,0 +1,31 @@
+- sensor:
+  - name: "Bathroom Radiator Power"
+    device_class: power
+    state_class: measurement
+    unit_of_measurement: "W"
+    state: >
+      {{ 500 if is_state('switch.bathroom_radiator', 'on') else 0 }}
+
+- sensor:
+  - name: "Bedroom Radiator Power"
+    device_class: power
+    state_class: measurement
+    unit_of_measurement: "W"
+    state: >
+      {{ 750 if is_state('switch.bedroom_radiator', 'on') else 0 }}
+
+- sensor:
+  - name: "Living Room Hall Radiator Power"
+    device_class: power
+    state_class: measurement
+    unit_of_measurement: "W"
+    state: >
+      {{ 500 if is_state('switch.living_room_hall_radiator', 'on') else 0 }}
+
+- sensor:
+  - name: "Living Room Main Radiator Power"
+    device_class: power
+    state_class: measurement
+    unit_of_measurement: "W"
+    state: >
+      {{ 1750 if is_state('switch.living_room_main_radiator', 'on') else 0 }}
