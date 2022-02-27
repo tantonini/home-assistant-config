@@ -10,6 +10,7 @@ automation: !include automations.yaml
 climate: !include climates.yaml
 scene: !include scenes.yaml
 script: !include scripts.yaml
+sensor: !include sensors.yaml
 template: !include templates.yaml
 
 http:

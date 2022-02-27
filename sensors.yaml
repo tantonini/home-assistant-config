@@ -1,0 +1,23 @@
+- platform: integration
+  source: sensor.bathroom_radiator_power
+  name: Bathroom Radiator Energy
+  unit_prefix: k
+  method: left
+
+- platform: integration
+  source: sensor.bedroom_radiator_power
+  name: Bedroom Radiator Energy
+  unit_prefix: k
+  method: left
+
+- platform: integration
+  source: sensor.living_room_hall_radiator_power
+  name: Living Room Hall Radiator Energy
+  unit_prefix: k
+  method: left
+
+- platform: integration
+  source: sensor.living_room_main_radiator_power
+  name: Living Room Main Radiator Energy
+  unit_prefix: k
+  method: left
