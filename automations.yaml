@@ -198,7 +198,7 @@
       temperature: 16
     target:
       area_id: bathroom
-  mode: single
+  mode: restart
 - id: '1645608724228'
   alias: Living Room Remote Switch - Bottom left button 2 pushes
   description: Turn off bathroom radiator
