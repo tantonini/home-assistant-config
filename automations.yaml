@@ -396,3 +396,31 @@
     target:
       area_id: bedroom
   mode: single
+- id: '1647717702451'
+  alias: Set kWh price in peak hours
+  description: ''
+  trigger:
+  - platform: time
+    at: 06:50:00
+  condition: []
+  action:
+  - service: input_number.set_value
+    data:
+      value: 0.1769
+    target:
+      entity_id: input_number.kwh_price
+  mode: single
+- id: '1647717839338'
+  alias: Set kWh price in off peak hours
+  description: ''
+  trigger:
+  - platform: time
+    at: '22:50:00'
+  condition: []
+  action:
+  - service: input_number.set_value
+    data:
+      value: 0.1422
+    target:
+      entity_id: input_number.kwh_price
+  mode: single
