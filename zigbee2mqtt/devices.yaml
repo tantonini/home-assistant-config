@@ -34,3 +34,4 @@
   friendly_name: Bedroom Remote Switch
 '0x00158d0005d2a193':
   friendly_name: ZLinky
+  kWh_precision: 3
