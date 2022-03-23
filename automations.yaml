@@ -184,15 +184,6 @@
       minutes: 20
       seconds: 0
       milliseconds: 0
-  - condition: device
-    type: is_on
-    device_id: 7613d369cf0ddd534aee75dd4e0ba9a2
-    entity_id: switch.bathroom_radiator
-    domain: switch
-    for:
-      hours: 0
-      minutes: 0
-      seconds: 0
   - service: climate.set_temperature
     data:
       temperature: 16
